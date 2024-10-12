@@ -5,7 +5,7 @@
 }
 html {
   font-size: 62.5%; /* 1 rem equivalen a 10px */
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif
 }
 /*--------------PRIMERA SECCION--------------*/
 .first-section{   
@@ -49,30 +49,31 @@ button:hover {
   cursor:pointer;
 }
 /*--------------SEGUNDA SECCION--------------*/
-.second-section{
+.second-section-columns{
   background-image: url(./images/img_fondo2.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 99%;
-  height: 700px;
+  background-size:cover;
+  width: 100%;
+  height: 500px;
   border-radius: 20px;
-  margin: 5px auto;
+  display: flex;
+  padding-top: 110px;
 }
-.main-container{
-  width: 65%;
-  position: absolute;
-  top: 110%;
-  
+.main-container-left, .main-container-left{
+  width: 50%;
+}
+.main-container-left {
+  text-align: center;
 }
 .sub-title{
   color: #2f9c95ff;
   font-size: 3.5rem;
-  padding: 0 75px 35px;
-  
+  padding-bottom: 34px;
+  text-align: center;
 }
 ul.flat-icon {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
 }
 ul.flat-icon li {
   list-style: none;
@@ -81,4 +82,92 @@ ul.flat-icon li {
 }
 .icon{
   width: 60px;
+  border-radius: 10px;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  box-shadow: 2px 2px 4px rgb(40, 68, 64);
+}
+p.text-icon{
+  position: relative;
+  top: 10%;
+  font-size: 1.2rem;
+}
+.section-img-left{
+  width: 450px;
+  border-radius: 10px;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  box-shadow: 2px 2px 4px rgb(40, 68, 64);
+}
+.section-figure-left, .box-figure-left{
+  width: 50%;
+}
+/*---------------TERCERA SECCION--------------*/
+.main-third-container {
+  padding-top: 65px;
+  width: 100%;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+.third-section{
+  height: 500px;
+ }
+.text1{
+  color: #40c9a2ff;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.text-strong{
+  color: #2f9c95ff;
+  font-size: 2.0rem;
+  padding-bottom: 20px;
+}
+.third-button{
+  display: block;
+  margin: 0 auto;
+}
+.fourth-section{
+  background-image: url(./images/foto2.jpg);
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+}
+.main-fourth-section{
+  display: flex;
+  flex-direction: column;
+  padding-top: 9%;
+  padding-left: 25%;
+ }
+ .sub-title1{
+  color:#e5f9e0ff;
+  font-size: 3.5rem;
+  padding-bottom: 10px;
+  text-align: center;
+ }
+.text2{
+  color: #40c9a2ff;
+  font-size: 2.0rem;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.fourth-button{
+  width: 160px;
+  margin: 0 auto;
+}
+/*---------------CUARTA SECCION--------------*/
+.fifth-section{
+  padding-top: 90px;
+  display: flex;
+  align-items: center;
+}
+.fifth-container-left{
+  width: 40%;
+}
+.image-fifth-section-left{
+  margin-left: 155px;
+}
+.section-aside{
+  width: 60%;
+  padding: 0 7%;
+
 }
