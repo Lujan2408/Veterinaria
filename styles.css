@@ -8,6 +8,48 @@ html {
   font-family: Arial, Helvetica, sans-serif
 }
 /*--------------PRIMERA SECCION--------------*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; 
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  box-sizing: border-box;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 600px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  text-decoration: none;
+}
+
+.menu-list a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(38, 126, 120);
+}
+
 .first-section{   
   background-image: url(./images/img_fondo1.webp);
   background-repeat: no-repeat;
@@ -24,13 +66,14 @@ html {
   padding-left: 75px;
 }
 .title{
-  color: #e5f9e0ff;
+  color: white;
   font-size: 4.2rem;
   padding-bottom: 20px;
 }
 .text{
   color: #e5f9e0ff;
   font-size: 1.8rem;
+  font-weight: bold;
   padding-bottom: 20px;
 }
 button{
@@ -138,14 +181,15 @@ p.text-icon{
   padding-top: 9%;
  }
  .sub-title1{
-  color:#e5f9e0ff;
-  font-size: 3.5rem;
+  color:white;
+  font-size: 3.8rem;
   padding-bottom: 10px;
   text-align: center;
  }
 .text2{
   color: #40c9a2ff;
   font-size: 2.0rem;
+  font-weight: bold;
   text-align: center;
   padding-bottom: 40px;
 }
