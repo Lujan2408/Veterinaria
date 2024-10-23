@@ -16,9 +16,11 @@ header {
   background-color: #ffffff; 
   height: 100px;
   width: 100%;
+  margin-top: 17px;
   text-align: center;
   position: fixed;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .nav-section {
@@ -54,10 +56,10 @@ header {
   background-image: url(./images/img_fondo1.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 99%;
+  width: 98%;
   height: 700px;
   border-radius: 20px;
-  margin: 5px auto;
+  margin: 15px auto;
 }
 .box{
   width: 57%;
