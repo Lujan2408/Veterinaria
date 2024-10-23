@@ -80,6 +80,9 @@ ul.flat-icon li {
   text-align: center;
   padding-bottom: 50px;
 }
+.flat-icon a{
+  text-decoration: none;
+}
 .icon{
   width: 60px;
   border-radius: 10px;
@@ -87,10 +90,15 @@ ul.flat-icon li {
   border-bottom-right-radius: 10%;
   box-shadow: 2px 2px 4px rgb(40, 68, 64);
 }
+.icon:hover{
+  transform: scale(1.2);
+  transition: 0.3s;
+} 
 p.text-icon{
   position: relative;
-  top: 10%;
   font-size: 1.2rem;
+  color: #2f9c95ff;
+  padding-top: 10px;
 }
 .section-img-left{
   width: 450px;
@@ -168,5 +176,4 @@ p.text-icon{
 .section-aside{
   width: 60%;
   padding: 0 7%;
-
 }
