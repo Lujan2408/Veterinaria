@@ -5,59 +5,81 @@
 }
 html {
   font-size: 62.5%; /* 1 rem equivalen a 10px */
-  font-family: Arial, Helvetica, sans-serif
+  font-family: "Poppins", sans-serif;
 }
-/*--------------PRIMERA SECCION--------------*/
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff; 
-  height: 100px;
-  width: 100%;
-  margin-top: 17px;
+/* Header section */
+
+#header {
+  background-color: #ffffff;
+  max-width: 1200px;
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 35px;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   position: fixed;
-  box-sizing: border-box;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
 }
 
-.nav-section {
+.main-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 600px;
+  height: auto;
+  gap: 250px;
 }
 
 .logo {
-  width: 90px;
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 95px;
 }
 
-.menu-list {
+.main-nav ul {
   display: flex;
+  gap: 35px;
+}
+
+.main-nav ul li {
   list-style: none;
-  gap: 40px;
-  text-decoration: none;
 }
 
-.menu-list a{
+.main-nav ul li a {
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.4rem;
   color: rgb(38, 126, 120);
+  transition: all 0.5s ease;
 }
+
+.main-nav ul li a:hover {
+  padding: 5px 12px; 
+  background: rgb(49, 158, 151);
+  color: #fff;
+  border-radius: 15px;
+}
+
+#login-label {
+  color: orangered;
+}
+
+#login-label:hover {
+  background-color: rgba(255, 68, 0, 0.822);
+  color: white;
+  border-radius: 10px;
+}
+
+/*--------------PRIMERA SECCION--------------*/
 
 .first-section{   
   background-image: url(./images/img_fondo1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 98%;
-  height: 700px;
+  height: 750px;
   border-radius: 20px;
   margin: 15px auto;
 }
@@ -73,24 +95,25 @@ header {
   padding-bottom: 20px;
 }
 .text{
-  color: #e5f9e0ff;
+  color: #fff;
   font-size: 1.8rem;
-  font-weight: bold;
   padding-bottom: 20px;
 }
-button{
-  background: #2f9c95ff;
+#visitanos-button{
+  background: orangered;
   color: white;
-  padding: 12px 16px;
-  border-radius: 8px;
+  padding: 14px;
+  border-radius: 10px;
   border: none;
-  font-size: 1.6rem;
-  font-weight: bold;
-  border: solid 1px #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
 }
-button:hover {
-  background-color: #664147;
-  box-shadow: 0 2px 2px rgb(14, 59, 56);
+#visitanos-button:hover {
+  background-color: rgb(237, 63, 0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   cursor:pointer;
 }
 /*--------------SEGUNDA SECCION--------------*/
@@ -102,7 +125,7 @@ button:hover {
   height: 500px;
   border-radius: 20px;
   display: flex;
-  padding-top: 110px;
+  align-items: center;
 }
 .main-container-left, .main-container-left{
   width: 50%;
@@ -148,15 +171,16 @@ p.text-icon{
   width: 50%;
 }
 /*---------------TERCERA SECCION--------------*/
+.third-section{
+  height: 500px;
+ }
 .main-third-container {
   padding-top: 65px;
+  padding-bottom: 65px;
   width: 100%;
   padding-left: 11%;
   padding-right: 11%;
 }
-.third-section{
-  height: 500px;
- }
 .text1{
   color: #40c9a2ff;
   font-size: 1.8rem;
@@ -166,11 +190,28 @@ p.text-icon{
   color: #2f9c95ff;
   font-size: 2.0rem;
   padding-bottom: 20px;
+  padding-top: 14px;
 }
-.third-button{
-  display: block;
+/* TODO: Darle margen al botón arriba y abajo y areglarlo*/
+#mas-info-button{
+  background-color: rgb(61, 169, 164);
+  display: flex;
   margin: 0 auto;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s ease;
 }
+
+#mas-info-button:hover {
+  background: rgb(38, 125, 120);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
 .fourth-section{
   background-image: url(./images/foto2.jpg);
   background-position: center;
@@ -183,36 +224,49 @@ p.text-icon{
   padding-top: 9%;
  }
  .sub-title1{
-  color:white;
-  font-size: 3.8rem;
-  padding-bottom: 10px;
+  color: white;
+  font-size: 5rem;
   text-align: center;
  }
-.text2{
-  color: #40c9a2ff;
-  font-size: 2.0rem;
-  font-weight: bold;
+ .text2{
+  color: white;
+  font-size: 2rem;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
-.fourth-button{
-  width: 160px;
+#agenda-cita-button{
+  background-color: rgb(61, 169, 164);
+  display: flex;
   margin: 0 auto;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s ease;
 }
+
+#agenda-cita-button:hover {
+  background: rgb(38, 125, 120);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
 /*---------------CUARTA SECCION--------------*/
 .fifth-section{
   padding-top: 90px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .fifth-container-left{
   width: 40%;
 }
 .image-fifth-section-left{
-  margin-left: 155px;
+  margin-left: 150px;
 }
 .section-aside{
-  width: 60%;
+  width: 63%;
   padding: 0 7%;
-
 }
