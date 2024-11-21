@@ -530,3 +530,57 @@ form textarea {
     font-size: 1.6rem;
 }
 
+/*contactanos*/
+.body-contacto{
+  background-image: url(images/img_fondo2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contacto-section{
+  width: 60rem;
+  height: 70rem;
+  padding: 4rem;
+  margin: 20rem auto 10rem;
+  background-color: #99ecd3;
+  border-radius: 0.5rem;
+}
+
+.contacto-section h2 {
+  text-align: center;
+  color: black;
+  font-size: 4rem;
+
+}
+
+.contacto-parrafo{
+  text-align: center;
+  color: black;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.article-contacto{
+  margin-top: 2rem;
+}
+
+.article-contacto .article-item-contacto{
+width: 40rem;
+height: 15rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.article-contacto .article-item-contacto img{
+  width: 8rem;
+  height: 8rem;
+}
+.article-contacto .article-item-contacto p,.article-contacto .article-item-contacto b{
+  font-size: 1.8rem;
+
+}
+
+
+
